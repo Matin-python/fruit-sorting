@@ -10,3 +10,11 @@ This project uses a fruit dataset containing numerical measurements of different
 The dataset is processed and divided into training and testing sets. Feature scaling is performed using `MinMaxScaler`, and four different Machine Learning classification algorithms are trained and evaluated using both training and test accuracy.
 
 The project also includes a scatter matrix visualization to explore the relationships between the input features.
+
+
+## Technologies Used
+
+* Python
+* Pandas
+* Matplotlib
+* Scikit-learn
