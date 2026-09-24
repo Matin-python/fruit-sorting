@@ -12,6 +12,19 @@ The dataset is processed and divided into training and testing sets. Feature sca
 The project also includes a scatter matrix visualization to explore the relationships between the input features.
 
 
+## Features
+
+* Fruit classification
+* Data preparation and feature selection
+* Scatter matrix visualization
+* Feature scaling using Min-Max normalization
+* Logistic Regression classification
+* Decision Tree classification
+* K-Nearest Neighbors classification
+* Support Vector Machine classification
+* Training and test accuracy evaluation
+
+
 ## Technologies Used
 
 * Python
