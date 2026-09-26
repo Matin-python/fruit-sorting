@@ -63,6 +63,45 @@ which represents the fruit class.
 The columns `fruit_name` and `fruit_subtype` are removed before training because they are not used as input features.
 
 
+## Data Preprocessing
+
+The following preprocessing steps are performed:
+
+### Feature Selection
+
+The project uses four numerical features:
+
+```python
+feature_names = ['mass', 'width', 'height', 'color_score']
+X = data[feature_names]
+y = data['fruit_label']
+```
+
+### Train/Test Split
+
+The dataset is divided into training and testing sets using an 85/15 split.
+
+```text
+85% → Training data
+15% → Testing data
+```
+
+A fixed `random_state=42` is used so that the same split can be reproduced.
+
+### Feature Scaling
+
+`MinMaxScaler` is used to scale the input features before training the models.
+
+```python
+scaler = MinMaxScaler()
+
+X_train = scaler.fit_transform(X_train)
+X_test = scaler.transform(X_test)
+```
+
+This transforms the feature values to a common scale and is particularly useful for models such as KNN, Logistic Regression, and SVM.
+
+
 ## License
 
 This project is licensed under the **MIT License**.
