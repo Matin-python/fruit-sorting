@@ -172,6 +172,43 @@ log_model.fit(X_train, y_train)
 The training and test accuracy are calculated using the model's `score()` method.
 
 
+### 2. Decision Tree
+
+A Decision Tree classifier is used as another approach for fruit classification.
+
+```python
+dt_model = DecisionTreeClassifier()
+dt_model.fit(X_train, y_train)
+```
+
+The model is evaluated on both the training and testing datasets.
+
+
+### 3. K-Nearest Neighbors (KNN)
+
+K-Nearest Neighbors is used to classify fruit based on the nearest training samples.
+
+```python
+knn_model = KNeighborsClassifier()
+knn_model.fit(X_train, y_train)
+```
+
+The model is evaluated using training and test accuracy.
+
+
+### 4. Support Vector Machine (SVM)
+
+Support Vector Machine is used as the fourth classification algorithm.
+
+```python
+svm_model = SVC()
+svm_model.fit(X_train, y_train)
+```
+
+The training and test accuracy are then calculated.
+
+
+
 ## License
 
 This project is licensed under the **MIT License**.
