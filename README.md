@@ -208,6 +208,31 @@ svm_model.fit(X_train, y_train)
 The training and test accuracy are then calculated.
 
 
+## Model Training
+
+Each classifier is trained using the same training dataset and evaluated using the same test dataset.
+
+For each model, the project prints:
+
+* Training accuracy
+* Test accuracy
+
+For example:
+
+```python
+print(
+    'Accuracy of Logistic Regression Classifier on training set: {:0.2f}'
+    .format(log_model.score(X_train, y_train))
+)
+
+print(
+    'Accuracy of Logistic Regression Classifier on test set: {:0.2f}'
+    .format(log_model.score(X_test, y_test))
+)
+```
+
+The same evaluation process is applied to the Decision Tree, KNN, and SVM models.
+
 
 ## License
 
