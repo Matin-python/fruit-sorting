@@ -33,6 +33,36 @@ The project also includes a scatter matrix visualization to explore the relation
 * Scikit-learn
 
 
+## Dataset
+
+The project uses the following dataset:
+
+```text
+fruit.txt
+```
+
+The dataset contains information about different types of fruit.
+
+The following features are used for classification:
+
+```text
+mass
+width
+height
+color_score
+```
+
+The target variable is:
+
+```text
+fruit_label
+```
+
+which represents the fruit class.
+
+The columns `fruit_name` and `fruit_subtype` are removed before training because they are not used as input features.
+
+
 ## License
 
 This project is licensed under the **MIT License**.
