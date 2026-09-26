@@ -156,6 +156,22 @@ Evaluate Training and Test Accuracy
 ```
 
 
+## Models
+
+Four different Machine Learning classification algorithms are used in this project.
+
+### 1. Logistic Regression
+
+Logistic Regression is used to classify the fruit based on the selected numerical features.
+
+```python
+log_model = LogisticRegression(max_iter=1000000)
+log_model.fit(X_train, y_train)
+```
+
+The training and test accuracy are calculated using the model's `score()` method.
+
+
 ## License
 
 This project is licensed under the **MIT License**.
