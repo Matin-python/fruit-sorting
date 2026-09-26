@@ -102,6 +102,35 @@ X_test = scaler.transform(X_test)
 This transforms the feature values to a common scale and is particularly useful for models such as KNN, Logistic Regression, and SVM.
 
 
+## Data Visualization
+
+A scatter matrix is created to visualize the relationships between the input features.
+
+```python
+scatter = scatter_matrix(
+    X,
+    c=y,
+    s=40,
+    figsize=(7,7),
+    hist_kwds={'bins':15},
+    marker='o',
+    cmap=cmap
+)
+
+plt.suptitle('scatter-matrix for each input variable')
+plt.savefig('fruit_scatter_matrix')
+plt.show()
+```
+
+The scatter matrix displays pairwise relationships between the features together with the distribution of each individual feature.
+
+### Scatter Matrix
+
+<p align="center">
+  <img src="screenshots/fruit_scatter_matrix.png" width="1000">
+</p>
+
+
 ## License
 
 This project is licensed under the **MIT License**.
