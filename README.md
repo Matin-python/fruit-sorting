@@ -131,6 +131,31 @@ The scatter matrix displays pairwise relationships between the features together
 </p>
 
 
+## Machine Learning Workflow
+
+The project follows the workflow below:
+
+```text
+Fruit Dataset
+      ↓
+Remove Unused Columns
+      ↓
+Select Input Features
+      ↓
+Create Scatter Matrix
+      ↓
+Train/Test Split
+      ↓
+Min-Max Feature Scaling
+      ↓
+Train Classification Models
+      ↓
+Make Predictions
+      ↓
+Evaluate Training and Test Accuracy
+```
+
+
 ## License
 
 This project is licensed under the **MIT License**.
